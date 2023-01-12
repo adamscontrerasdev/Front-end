@@ -1,0 +1,13 @@
+<section class="edit-id">
+    <form action="" #f="ngForm" novalidate (ngSubmit)="onUpdate()">
+        <label for="tecnologia">Color</label>
+        <input style="--vari:{{hardSkill.color}}" type="text" id="tecnologia" name="color" [(ngModel)]="hardSkill.color">
+        <label for="tecnologia">Nombre de tecnologia</label>
+        <input style="--vari:{{hardSkill.color}}" type="text" id="tecnologia" name="tecnologia" [(ngModel)]="hardSkill.tecnologia">
+        <label for="desc">Porcentaje</label>
+        <input style="--vari:{{hardSkill.color}}" type="number" id="desc" name="descripcion_rapida" [(ngModel)]="hardSkill.porcentaje">
+        <p><span style="--vari:{{hardSkill.color}}">Antes:</span>  {{hardSkill.porcentaje}}%</p>
+        <button style="--vari:{{hardSkill.color}}" class="btn btn-success">Guardar</button>
+    </form>
+    </section>
+    

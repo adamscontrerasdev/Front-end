@@ -1,0 +1,12 @@
+<section class="edit-id">
+    <form action="" #f="ngForm" novalidate (ngSubmit)="onCreate()">
+        <label for="imagen">Foto</label>
+        <img [src]="foto" alt="">
+        <input type="text" name="imagen" id="imagen" [(ngModel)]="foto" required>
+        <label for="nombre">Nombre de experiencia</label>
+        <input type="text" id="nombre" name="nombre_de_experiencia" [(ngModel)]="nombreE" required>
+        <label for="desc">Descripcion</label>
+        <input type="text" id="descripcion_rapida" name="descripcion_rapida" [(ngModel)]="descripcion" required>
+        <button class="btn btn-success">Agregar</button>
+    </form>
+    </section>

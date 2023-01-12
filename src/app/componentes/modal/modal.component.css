@@ -1,0 +1,19 @@
+.modal-btn-i:hover{
+    background:rgb(0, 182, 70);
+    color: #fff;
+}
+
+.modal-btn-c:hover{
+    background: #d00;
+    color: #fff;
+}
+
+#exampleModal{
+    background:  none !important;
+}
+
+.modal-body form{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}

@@ -1,0 +1,15 @@
+<section class="edit-id">
+    <form action="" #f="ngForm" novalidate (ngSubmit)="onCreate()">
+        <img [src]="imagen" alt="">
+        <label for="nombre">Nombre de proyecto</label>
+        <input type="text" id="nombre" name="nombre_proyecto" [(ngModel)]="nombre_proyecto">
+        <label for="desc">Descripcion</label>
+        <input type="text" id="desc" name="descripcion" [(ngModel)]="descripcion">
+        <label for="Enlace">Enlace</label>
+        <input type="text" id="Enlace" name="url_pagina" [(ngModel)]="url_pagina">
+        <label for="foto">foto URL</label>
+        <input type="text" id="foto" name="imagen" [(ngModel)]="imagen">
+        <p><span style="color: #FAAF51;">Antes:</span>  {{imagen}}</p>
+        <button class="btn btn-success">Agregar</button>
+    </form>
+    </section>

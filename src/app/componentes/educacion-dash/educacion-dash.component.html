@@ -1,0 +1,76 @@
+<section class="educacion" id="educacion">
+  <div class="educacion-center">
+    <h3>Educacion</h3>
+    <div class="contenido-educacion">
+      <ul>
+        <li *ngFor="let educacion of edu">
+          <div class="card-educacion">
+            <div class="card-imagen">
+              <a href="https://larrea325.com" target="_blank"
+                ><img [src]="educacion.imagen"
+              /></a>
+            </div>
+
+            <div class="texto-exp">
+              <a href="https://larrea325.com" target="_blank"
+                ><h3>{{ educacion.instituto }}</h3></a
+              >
+              <p>{{ educacion.descripcion_rapida }}</p>
+            </div>
+            <div class="botones-dos">
+              <button routerLink="/eduid/{{ educacion.id }}">Editar</button>
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal2" (click)="guardarId(educacion.id)" >Eliminar</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- <div class="card-educacion">
+                <div class="card-imagen"><a href="https://larrea325.com" target="_blank"><img [src]="miPortfolio.educacion[1].imagen"></a></div>
+                
+                <div class="texto-exp">
+                    <a href="https://larrea325.com" target="_blank"><h3>{{miPortfolio.educacion[1].instituto}}</h3></a>
+                    <p>{{miPortfolio.educacion[1].contenido}}</p>
+                </div>
+            </div>
+            <div class="card-educacion">
+                <div class="card-imagen"><a href="https://larrea325.com" target="_blank"><img [src]="miPortfolio.educacion[2].imagen"></a></div>
+                
+                <div class="texto-exp">
+                    <a href="https://larrea325.com" target="_blank"><h3>{{miPortfolio.educacion[2].instituto}}</h3></a>
+                    <p>{{miPortfolio.educacion[2].contenido}}</p>
+                </div>
+            </div>
+            <div class="card-educacion">
+                <div class="card-imagen"><a href="https://larrea325.com" target="_blank"><img [src]="miPortfolio.educacion[3].imagen"></a></div>
+                
+                <div class="texto-exp">
+                    <a href="https://larrea325.com" target="_blank"><h3>{{miPortfolio.educacion[3].instituto}}</h3></a>
+                    <p>{{miPortfolio.educacion[3].contenido}}</p>
+                </div>
+            </div> -->
+    </div>
+
+    <div class="mas">
+      <button class="btn btn-success" routerLink="/new/edu">
+        Agregar nueva...
+      </button>
+    </div>
+  </div>
+  <div class="modal fade alert-modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" > 
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Atencion!!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Esta seguro que desea eliminar esta educacion?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Mantener</button>
+          <button type="button" class="btn btn-danger"  (click)="eliminarEducacion()" >Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+<section class="edit-id">
+    <form action="" #f="ngForm" novalidate (ngSubmit)="onCreate()">
+        <label for="tecnologia">Color en Hexadecimal</label>
+        <input style="--vari:{{color}}" type="text" id="tecnologia" name="color" [(ngModel)]="color">
+        <label for="tecnologia">Nombre de tecnologia</label>
+        <input style="--vari:{{color}}" type="text" id="tecnologia" name="tecnologia" [(ngModel)]="tecnologia">
+        <label for="desc">Porcentaje</label>
+        <input style="--vari:{{color}}" type="number" id="desc" name="porcentaje" [(ngModel)]="porcentaje">
+        <p><span style="--vari:{{color}}" >Antes:</span>  {{porcentaje}}%</p>
+        <button style="--vari:{{color}}"  class="btn btn-success">Guardar</button>
+    </form>
+    </section>

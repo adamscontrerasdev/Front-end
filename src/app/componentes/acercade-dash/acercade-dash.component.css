@@ -1,0 +1,83 @@
+.acerca-de{
+    position: relative;
+    display: flex;
+    padding-top:50px;
+    gap: 6em;
+    height: auto;
+
+}
+
+.contenido-acerca{
+    margin: 0 20% 0 50%;
+    padding: 10px;
+    width: 50vw;
+    height: auto;
+}
+
+.titulo{
+    font-weight: 500;
+    font-size: 1.5em;
+    height: auto;
+    width: 130%;
+}
+
+.text_info{
+    font-size: 1em;
+    height: auto;
+    width: 100%;
+}
+/*Formulario*/
+
+.form-acerca{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.form-acerca button{
+    border: none;
+}
+
+.form-acerca input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #007BFF ;
+    font-size: 20px;
+}
+
+
+/*LApiz*/
+
+#pencil{
+    background: #007BFF;
+    border: none;
+    outline: none;
+    width: 185px;
+    border-radius: 10px;
+}
+
+.bx:hover{
+    transform: none;
+}
+
+@media (max-width:900px) {
+    #acerca-de{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        padding-top:50px;
+        gap: 6em;
+        height: auto;
+    }
+
+    .contenido-acerca{
+        display: flex;
+        flex-direction: column;
+        margin: 50%;
+        padding: 10px;
+        width: 50vw;
+        height: auto;
+    }
+}

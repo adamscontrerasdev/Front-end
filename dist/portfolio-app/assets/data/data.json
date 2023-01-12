@@ -1,0 +1,112 @@
+{
+  "banner": [
+    { "nombre": "Adams Contreras", "fotoPerfil": "../assets/img/perfil.png" }
+  ],
+  "redesSociales": {
+    "instagram": "https://www.instagram.com/adams.c.dev/",
+    "linkedin": "https://www.linkedin.com/in/adams-contreras-390762215/",
+    "github": "https://github.com/adamscontrerasdev"
+  },
+  "acercaDe": [
+    {
+      "soy": "Desarrollador web full-stack Jr",
+      "masDeMi": "Tengo 2 años de experiencia en el desarrollo Web y actualmente estoy en camino a convertirme en Full-Stack certificado"
+    }
+  ],
+  "experiencia": [
+    {
+      "imagen": "https://adnews.com.br/wp-content/uploads/2021/03/Rappi.png",
+      "trabajo": "Rappi",
+      "contenido": "Tuve una epoca en la que mi principal fuente de ingresos era trabajar haciendo envios con la plataforma destinada para dicho proposito Rappi"
+    },
+    {
+      "imagen": "https://tecnologicodelaudio.milaulas.com/pluginfile.php/298/course/summary/PM.jpg",
+      "trabajo": "Productor musical",
+      "contenido": "La produccion de musica ha sido desde el 2012 mi pasion y fue mi trabajo principal de 2018 a 2019 actualmente hago pequeñas producciones particulares a clientes que me quedaron de esos momentos"
+    },
+    {
+      "imagen": "https://images5.alphacoders.com/108/1083453.jpg",
+      "trabajo": "Encargado de pizzeria",
+      "contenido": "Fui cocinero encargador de una pizzaria en la localidad de belgrano aprendi muchas cosas acerca de cocina y de como administrar un local ya que este mismo era propidad de quienes eran mis empleadores directos"
+    }
+  ],
+  "educacion": [
+    {
+      "imagen": "https://yt3.ggpht.com/ytc/AMLnZu-601d1TRa-DAap-PfCPP7R7LbjZPzPYjEJ-8dZ=s900-c-k-c0x00ffffff-no-rj",
+      "instituto": "Colegio los corales CLC (Venezuela)",
+      "contenido": "En este colegio culmine mi etapa de educacion primaria"
+    },
+    {
+      "imagen": "http://1.bp.blogspot.com/_kt93hmR1YHY/TB0NtGBVoXI/AAAAAAAAABM/PLL261Z40AI/S1600-R/logo.png",
+      "instituto": "Liceo Jose Maria España (Venezuela)",
+      "contenido": "En este colegio curse hasta 3er año de secundaria"
+    },
+    {
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwU86ceze8H_4ULpEaTCXXxJCHtKKlJ69mfm60Lh2d6CzmD3Na8jJhxD3aOMUh9iLomg&usqp=CAU",
+      "instituto": "Colegio Simon Bolivar (Venezuela)",
+      "contenido": "En este colegio curse el 4to año de secundaria"
+    },
+    {
+      "imagen": "https://th.bing.com/th/id/R.7d4f5c217994000a6283f6a1df477189?rik=770Eys9WwnOW0Q&riu=http%3a%2f%2fwww.biografiasyvidas.com%2fbiografia%2fb%2ffotos%2fbelgrano_manuel.jpg&ehk=fTsfiGXQfbQy87fK6tSwIVpE%2bii9JcHHuQB06w7KHVY%3d&risl=&pid=ImgRaw&r=0",
+      "instituto": "Colegio Manuel Belgrano (Argentina)",
+      "contenido": "En este colegio culmine la secundaria"
+    }
+  ],
+  "hardSkills": [
+    {
+      "tec": "html",
+      "porc": "90",
+      "color": "#f06529",
+      "colorsecun": "#f06529"
+    },
+    { "tec": "css", "porc": "60", "color": "#2965f1", "colorsecun": "#fff" },
+    {
+      "tec": "javaScript",
+      "porc": "40",
+      "color": "#F0DB4F",
+      "colorsecun": "#F0DB4f"
+    },
+    {
+      "tec": "bootstrap",
+      "porc": "40",
+      "color": "#6c1d80",
+      "colorsecun": "#fff"
+    },
+    {
+      "tec": "json",
+      "porc": "60",
+      "color": "#F0DB00",
+      "colorsecun": "#f0db00"
+    },
+    {
+      "tec": "Angular",
+      "porc": "20",
+      "color": "#dd1b16",
+      "colorsecun": "#fff"
+    },
+    { "tec": "SQL", "porc": "30", "color": "#00758F", "colorsecun": "#F29111" },
+    { "tec": "diseño", "porc": "100", "color": "#ff66c4", "colorsecun": "#fff" }
+  ],
+  "proyectos": [
+    {
+      "nombre": "Tienda online",
+      "descripcion": "Es mi primer proyecto de uso real, actualmente esta subido a Hostinger y le compre un dominio para uso del cliente, se trata de una tiendo Online que recibe pedidos con un carrito y envía dicho pedido por WhatsApp cuando tocas el botón correspondiente",
+      "link": "https://larrea325.com/index.html",
+      "image": [
+        "./../../../assets/img/tienda.png",
+        "./../../../assets/img/tienda2.jpeg",
+        "./../../../assets/img/tienda3.png"
+      ]
+    },
+    {
+      "nombre": "Portfolio full styles",
+      "descripcion": "Mi portfolio que diseñe para mostrar mis habilidades de diseño y animaciones, tambien es un proyecto en uso, mi uso personal esta actualmente en hostiger y tambien le compre un dominio",
+      "link": "https://adamsdev.network",
+      "image": [
+        "./../../../assets/img/prot.png",
+        "./../../../assets/img/port2.png",
+        "./../../../assets/img/port3.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<section class="banner" id="banner">
+    <div class="fondo-banner" *ngFor="let m of miPortfolio">
+        <img [src]="m.banner_url" alt="">
+    </div>
+    <div class="perfil" *ngFor="let m of miPortfolio">
+        <img [src]="m.perfil_url" alt="">
+        <h2 class="nombre">{{m.nombre}} {{m.apellido}}</h2>
+    </div>  
+</section>
+

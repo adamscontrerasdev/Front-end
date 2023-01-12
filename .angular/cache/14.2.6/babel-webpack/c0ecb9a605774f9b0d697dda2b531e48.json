@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class HardSkills {\n  constructor(tecnologia, porcentaje, color) {\n    this.id = null;\n    this.tecnologia = tecnologia;\n    this.porcentaje = porcentaje;\n    this.color = color;\n    this.color_secundario = \"#fff\";\n    this.persona_id = 1;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

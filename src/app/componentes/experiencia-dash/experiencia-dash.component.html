@@ -1,0 +1,64 @@
+<section class="experiencia" id="experiencia">
+    <div class="experiencia-center">
+        <h3>Mi experiencia</h3>
+        <div class="contenido-experiencia">
+            <ul>
+                <li *ngFor="let experiencia of expe" class="p"> 
+                <div class="card-experiencia">
+                    <div class="card-imagen"><a href="https://larrea325.com" target="_blank"><img [src]="experiencia.imagen" alt=""></a></div>
+                    
+                    <div class="texto-exp">
+                        
+                        <a href="https://larrea325.com" target="_blank"><h3>{{experiencia.nombre_de_experiencia}}</h3></a>
+                        <p>{{experiencia.descripcion_rapida}}</p>
+                    </div>
+                    <div class="botones-dos">
+                        <button routerLink="/expid/{{experiencia.id}}">Editar</button>
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal1" (click)="guardarId(experiencia.id)">Eliminar</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+            <!-- <div class="card-experiencia">
+                <div class="card-imagen"><a href="https://larrea325.com" target="_blank"><img [src]="miPortfolio.experiencia[1].imagen" alt=""></a></div>
+                
+                <div class="texto-exp">
+                    <a href="https://larrea325.com" target="_blank"><h3>{{miPortfolio.experiencia[1].trabajo}}</h3></a>
+                    <p>{{miPortfolio.experiencia[1].contenido}}</p>
+                </div>
+            </div>
+            <div class="card-experiencia">
+                <div class="card-imagen"><a href="#" target="_blank">
+                    <img [src]="miPortfolio.experiencia[2].imagen" alt=""></a></div>
+                
+                <div class="texto-exp">
+                    <a href="https://larrea325.com" target="_blank">
+                        <h3>{{miPortfolio.experiencia[2].trabajo}}</h3></a>
+                    <p>{{miPortfolio.experiencia[2].contenido}}</p>
+                </div>
+            </div> -->
+    </div>
+    <div class="mas">
+        <button class="btn btn-success" routerLink="/new/exp">Agregar nueva...</button>
+    </div>
+    </div>
+  <!-- Modal -->
+  <div class="modal fade alert-modal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" > 
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Atencion!!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Esta seguro que desea eliminar esta experiencia?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Mantener</button>
+          <button type="button" class="btn btn-danger"  (click)="eliminar()" >Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

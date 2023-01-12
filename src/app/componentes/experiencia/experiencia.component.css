@@ -1,0 +1,88 @@
+.experiencia-center{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 0 0 5% 0;
+    background: #eee;
+}
+
+.contenido-experiencia{
+    position: relative;
+    margin: auto;
+}
+
+.experiencia-center h3{
+    position: relative;
+    margin: 20px auto;
+}
+
+.card-experiencia{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+    gap: 2em;
+    padding: 20px;
+    width: 50vw;
+    height: auto;
+}
+
+.invert{
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+
+.card-imagen img{
+    width: 250px;
+    border-radius: 10px;
+    transition: all .2s;
+    
+}
+
+.card-experiencia img:hover{
+    transform: scale(.9);
+}
+
+.texto-exp a{
+    text-decoration: none;
+}
+
+.texto-exp h3{
+    color: #000;
+}
+
+@media (max-width:900px) {
+    .experiencia-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0 0 5% 0;
+        background: #f1f1f1;
+    }
+
+    .card-experiencia{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3em;
+        gap: 2em;
+        padding: 20px;
+        width: 50vw;
+        height: auto;
+    }
+
+    ul{
+        padding: 0;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

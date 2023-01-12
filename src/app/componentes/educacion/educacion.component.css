@@ -1,0 +1,72 @@
+.texto-exp a{
+    text-decoration: none;
+    color: #000;
+}
+.educacion-center{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+    background: #fff;
+}
+
+.contenido-educacion{
+    position: relative;
+    margin: auto;
+}
+
+.educacion-center h3{
+    position: relative;
+    margin: 20px auto;
+}
+
+.card-educacion{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+    gap: 2em;
+    padding: 20px;
+    width: 50vw;
+    height: auto;
+}
+
+.card-imagen img{
+    width: 250px;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+@media (max-width:900px) {
+    .educacion-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0 0 5% 0;
+        background: #f1f1f1;
+    }
+
+    .card-educacion{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3em;
+        gap: 2em;
+        padding: 20px;
+        width: 50vw;
+        height: auto;
+    }
+
+    ul{
+        padding: 0;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,43 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>        
+        <div class="modal-body">
+            <!--Formulario-->
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="nombreUsuario" class="col-form-label">Usuario</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="nombreUsuario" class="form-control" aria-describedby="passwordHelpInline"
+                    name="nombreUsuario"[(ngModel)]="nombreUsuario" required value="v"/>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="password" class="col-form-label">Contraseña</label>
+                </div>
+                <div class="col-auto">
+                    <input type="password" id="password" class="form-control" aria-describedby="passwordHelpInline" 
+                    name="password"required [(ngModel)]="password"/>
+                </div>
+                <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                    Si no conoces los datos no deberias estar aqui
+                </span>
+                </div>
+            </div>
+            <!--Botones-->
+        <div class="modal-footer">
+            <button type="button" class="btn modal-btn-c" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn modal-btn-i">Ingresar</button>
+        </div>
+    </form>
+    </div>
+    </div>
+    </div>
+</div>

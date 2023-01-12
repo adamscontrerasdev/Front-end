@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Experiencia {\n  constructor(id, imagen, nombre_de_experiencia, descripcion_rapida, persona_id) {\n    this.id = id;\n    this.imagen = imagen;\n    this.nombre_de_experiencia = nombre_de_experiencia;\n    this.descripcion_rapida = descripcion_rapida;\n    this.persona_id = persona_id;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

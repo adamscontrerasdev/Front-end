@@ -1,0 +1,234 @@
+/*Soft*/
+.soft-skills{
+    min-height: 600px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, #111, #fff);
+}
+
+.soft-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto-soft{
+    color: #fff;
+}
+
+.soft-titulo{
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.imagen-soft{
+    height: 250px;
+    width: 200px;
+}
+
+.imagen-soft img{
+    height: 100%;
+    width: 100%;
+}
+
+.soft-center{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 40px;
+}
+
+
+/*Hard*/
+
+.hard-skills{
+    display: flex;
+    min-height: 600px;
+    position: relative;
+    width: 100vw;
+    background: #111;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hard{
+    color: #fff;
+}
+
+.card-hard{
+    position: relative;
+    width: 220px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hard-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.porcentaje{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.porcentaje svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+.porcentaje svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #222;
+    transform: translate(5px,5px);
+}
+
+.porcentaje svg circle:nth-child(2){
+    stroke: var(--color);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num))/100);
+    opacity: 0;
+
+}
+
+@keyframes cargar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform: rotate(calc(3.6deg * var(--num)));
+
+    
+}
+
+.salir{
+    animation:animar 2s linear forwards;
+}
+
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+
+    box-shadow: 0 0 10px var(--color), 0 0 30px var(--color)
+    
+
+    
+}
+
+.numero{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.numero h2{
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.numero h2 span{
+    font-weight: 300;
+    color: #fff;
+    font-size: .5em;
+}
+
+.numero p{
+    font-weight: 300;
+    font-size: .75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.active{
+    animation: cargar 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes animar {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+/*BOTONES*/
+
+.botones-dos{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.botones-dos button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    transition: .2s;
+    border: 1px solid #ddd;
+    color: #ddd;
+}
+
+.botones-dos button:nth-child(1):hover{
+    background: rgb(255, 241, 112);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.botones-dos button:nth-child(2):hover{
+    background: rgb(255, 112, 112);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+

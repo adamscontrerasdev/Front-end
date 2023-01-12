@@ -1,0 +1,110 @@
+<section class="proyectos"  id="proyectos">
+  <div class="proyectos-center">
+  <div class="proyectos-titulo">
+      <h2>Proyectos</h2>
+  </div>
+  <div class="proyectos-content">
+      <div class="card-proyectos" *ngFor="let pro of proyectoTodo">
+        <div class="botones-dos">
+          <button routerLink="/proyecto/{{pro.id}}">Editar</button>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal4" (click)="guardarId(pro.id)">Eliminar</button>
+        </div>
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1500">
+                  <img [src]="pro.imagen" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                  <img [src]="pro.imagen" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1500">
+                  <img [src]="pro.imagen" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="pro-t">
+              <h2>{{pro.nombre_proyecto}}</h2>
+              <p>{{pro.descripcion}}</p>
+            </div>
+      </div>
+      <button class="mas-mas" routerLink="/new/proyecto">
+        <div class="new">
+          <h1>+</h1>
+        </div>
+      </button>
+
+      <!-- <div class="card-proyectos">
+        <a href="https://adamsdev.network" target="_blank"><div class="arriba"></div></a>
+        <a href="https://adamsdev.network" target="_blank"><div class="abajo">
+          <h2>Ir al sitio...</h2>
+        </div></a>
+        <a href="https://adamsdev.network" target="_blank">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1500">
+                <img src="" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1500">
+                <img src="" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1500">
+                <img src="" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="pro-t">
+            <h2></h2>
+            <p>
+            </p>
+          </div>
+        </a>
+    </div> -->
+
+  </div>
+  
+  </div>
+ <!-- Modal -->
+ <div class="modal fade alert-modal" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" > 
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Atencion!!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Esta seguro que desea eliminar este proyecto?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Mantener</button>
+        <button type="button" class="btn btn-danger"  (click)="eliminarProyecto()" >Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

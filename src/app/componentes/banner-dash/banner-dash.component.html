@@ -1,0 +1,22 @@
+<head>
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+</head>
+<section class="banner" id="banner">
+  <div class="fondo-banner" *ngFor="let m of miPortfolio">
+      <img [src]="m.banner_url" alt="">
+  </div>
+  <div class="perfil" *ngFor="let m of miPortfolio">
+      <img [src]="m.perfil_url" alt="">
+      <form action="" class="form-nombre" (ngSubmit)="onEditarPersona()">
+        <input type="text" name="" id="" name="nombre"  [(ngModel)]="persona.nombre">
+        <input type="text" name="" id="" name="apellido" [(ngModel)]="persona.apellido">
+        <button type="submit"><i class='bx bxs-pencil' id="pencil"></i></button>
+      </form>
+  </div>  
+</section>
+
+
+<!-- this.datosPortfolio.http.get<any>("http://localhost:8080/ver/personas").subscribe(otro => { JSON.stringify(otro[0].nombre)}) -->

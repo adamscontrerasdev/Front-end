@@ -1,0 +1,178 @@
+.proyectos{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(360deg,#fff, #111);
+}
+
+.proyectos-center{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 90vw;
+}
+
+.proyectos-titulo{
+    color: #fff;
+}
+
+
+.card-proyectos{
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    width: 300px;
+    height: 450px;
+    transition: all .2s;
+    
+}
+
+.arriba{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    background: rgba(0, 0, 0, .5);
+    top: -225px;
+    transition: all .3s;
+    z-index: 100;
+}
+
+.abajo{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: -225px;
+    z-index: 101;
+    transition: all .3s;
+}
+
+.abajo h2{
+    position: absolute;
+    opacity: 0;
+    top: -25px;
+}
+
+.card-proyectos:hover.card-proyectos h2{
+    opacity: 1;
+}
+
+.card-proyectos:hover .arriba{
+    top: 0;
+}
+
+.card-proyectos:hover .abajo{
+    bottom: 0;
+}
+
+
+
+.card-proyectos a{
+    text-decoration: none;
+    color: #000;
+}
+
+.pro-t{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.proyectos-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+/*BOTONES*/
+
+.botones-dos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones-dos button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: .2s;
+    border: 1px solid #ddd;
+}
+
+.botones-dos button:nth-child(1){
+    background: rgb(73, 73, 73);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+}
+
+.botones-dos button:nth-child(2){
+    background: rgb(32, 32, 32);
+    color: rgb(0, 0, 0);
+    border-radius:  10px 0px 0 10px;
+    color: #fff;
+}
+
+.botones-dos button:nth-child(1):hover{
+    background: rgb(255, 241, 112);
+    color: rgb(0, 0, 0);
+    border: none;
+    
+}
+
+.botones-dos button:nth-child(2):hover{
+    background: rgb(255, 112, 112);
+    color: rgb(0, 0, 0);
+}
+
+.new{
+    display: flex;
+    border-radius: 10px;
+    background: rgba(77, 77, 77, 0.705);
+    overflow: hidden;
+    width: 300px;
+    height: 450px;
+    transition: all .2s;
+    justify-content: center;
+    align-items: center;
+}
+
+.new h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.027);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.mas-mas{
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: all .2s;
+}
+
+.mas-mas:hover{
+    transform: scale(.9);
+}
+

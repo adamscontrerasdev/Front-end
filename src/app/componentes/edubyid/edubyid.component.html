@@ -1,0 +1,11 @@
+<section class="edit-id">
+    <form action="" #f="ngForm" novalidate (ngSubmit)="onUpdate()">
+        <img [src]="eduTodo.imagen" alt="">
+        <label for="nombre">Nombre de experiencia</label>
+        <input type="text" id="nombre" name="nombre_de_experiencia" [(ngModel)]="eduTodo.instituto">
+        <label for="desc">Descripcion</label>
+        <input type="text" id="desc" name="descripcion_rapida" [(ngModel)]="eduTodo.descripcion_rapida">
+        <p><span style="color: #FAAF51;">Antes:</span>  {{eduTodo.descripcion_rapida}}</p>
+        <button class="btn btn-success">Guardar</button>
+    </form>
+    </section>

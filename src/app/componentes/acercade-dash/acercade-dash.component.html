@@ -1,0 +1,12 @@
+<section class="acerca-de" id="acerca-de">
+    <div class="contenido-acerca" *ngFor="let m of miPortfolio">
+        <div class="fondo"><img src="/assets/img/astronauta.png" alt="" ></div>
+        <form action="" class="form-acerca" novalidate #f="ngForm" (ngSubmit)="onEditarPersona()">
+            <input type="text" value="{{m.titulo}}" name="titulo" [(ngModel)]="persona.titulo">
+            <p><span style="color: #FAAF51;">Antes:</span> {{m.titulo}}</p>
+            <input type="text" name="sobre_mi" [(ngModel)]="persona.sobre_mi">
+            <p><span style="color: #FAAF51;">Antes:</span> {{m.sobre_mi}}</p>
+            <button type="submit" id="pencil"><i class='bx bxs-pencil' ></i></button>
+        </form>
+    </div>
+</section>

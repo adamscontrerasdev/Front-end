@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb{ 
+    background: #222;
+    border-radius: 10px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.list-group{
+    --bs-list-group-bg: ;
+    
+}
+
+.bx{
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.bx:hover{
+    color: #ddd;
+    transform: translateY(-5px);
+}
+
+
+
+
+#todo{
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+.fondo img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1; 
+    filter: invert(.5);
+    opacity: .3;
+    transform: translateY(57px) rotate(10deg);
+}
+
+
+.nav-fix{
+    background: #222;
+    position: fixed;
+    z-index: 1000;
+    bottom: 50px;
+    right: 50px;
+    background: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition:all .5s;
+    
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    transition: all .5s;
+}
+
+.bx-menu{
+    color: rgb(255, 255, 255);
+}
+
+ul li{
+    list-style: none;
+}
+.nav-fix ul{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+.hiden{
+    opacity: 0;
+}
+
+.shake{
+    animation: llamar .5s linear;
+}
+
+/* section educacion*/
+
+
+
+/*Skils section*/
+
+/*SOFT*/
+
+
+
+/*HARD*/
+
+
+
+
+
+@keyframes llamar {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+

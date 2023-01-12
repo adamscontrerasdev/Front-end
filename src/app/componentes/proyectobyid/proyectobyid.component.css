@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.edit-id{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+form{
+
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    margin: auto;
+    background: #eee;
+    border-radius: 10px;
+}
+
+img{
+    width: 300px;
+    border-radius: 10px;
+    
+}
+p, form input{
+    width: 300px;
+}
+
+form input{
+
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #007BFF;
+    font-size: 20px;
+    background: transparent;
+}
+
+label{
+    color: #bbb;
+}
+
+.btn-success{
+    height: 40px !important;
+    width: 100px !important;
+}

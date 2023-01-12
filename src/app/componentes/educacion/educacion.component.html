@@ -1,0 +1,49 @@
+<section class="educacion" id="educacion">
+<div class="educacion-center">
+    <h3>Educacion</h3>
+    <div class="contenido-educacion">
+    <ul>
+        <li *ngFor="let educacion of educacionList">
+        <div class="card-educacion">
+            <div class="card-imagen">
+            <a href="https://larrea325.com" target="_blank"
+                ><img [src]="educacion.imagen"
+            /></a>
+            </div>
+
+            <div class="texto-exp">
+            <a href="https://larrea325.com" target="_blank"
+                ><h3>{{ educacion.instituto }}</h3></a
+            >
+            <p>{{ educacion.descripcion_rapida }}</p>
+            </div>
+        </div>
+    </li>
+</ul>
+    <!-- <div class="card-educacion">
+            <div class="card-imagen"><a href="https://larrea325.com" target="_blank"><img [src]="miPortfolio.educacion[1].imagen"></a></div>
+            
+            <div class="texto-exp">
+                <a href="https://larrea325.com" target="_blank"><h3>{{miPortfolio.educacion[1].instituto}}</h3></a>
+                <p>{{miPortfolio.educacion[1].contenido}}</p>
+            </div>
+        </div>
+        <div class="card-educacion">
+            <div class="card-imagen"><a href="https://larrea325.com" target="_blank"><img [src]="miPortfolio.educacion[2].imagen"></a></div>
+            
+            <div class="texto-exp">
+                <a href="https://larrea325.com" target="_blank"><h3>{{miPortfolio.educacion[2].instituto}}</h3></a>
+                <p>{{miPortfolio.educacion[2].contenido}}</p>
+            </div>
+        </div>
+        <div class="card-educacion">
+            <div class="card-imagen"><a href="https://larrea325.com" target="_blank"><img [src]="miPortfolio.educacion[3].imagen"></a></div>
+            
+            <div class="texto-exp">
+                <a href="https://larrea325.com" target="_blank"><h3>{{miPortfolio.educacion[3].instituto}}</h3></a>
+                <p>{{miPortfolio.educacion[3].contenido}}</p>
+            </div>
+        </div> -->
+    </div>
+  </div>
+</section>

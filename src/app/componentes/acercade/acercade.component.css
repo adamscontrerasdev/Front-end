@@ -1,0 +1,14 @@
+.acerca-de{
+    position: relative;
+    display: flex;
+    padding-top:50px;
+    gap: 6em;
+    height: auto;
+}
+
+.contenido-acerca{
+    margin: 0 20% 0 50%;
+    padding: 10px;
+    width: 50vw;
+    height: auto;
+}

@@ -1,0 +1,23 @@
+<nav class="navbar bg-black" id="todo">
+    <div class="container-fluid">
+        <div class="logo-mas">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/img/logo.png" alt="Logo argentina programa" width="120 letra-negra">
+        </a>
+        <div class="icono-flecha" (click)="menu()"><i class='bx bx-up-arrow-alt'></i></div>
+        </div>
+        <ul class="list-group list-group-horizontal" style="--bs-list-group-bg:transparent;">
+            <li class="list-group-item padre-botones" *ngFor="let m of miPortfolio">
+                <a [href]="m.url_red"> <i class='bx bxl-{{m.nombre}} {{m.nombre}}' ></i></a>
+            </li>
+            <li class="list-group-item" type="button" class="btn btn-primaryx" data-bs-toggle="modal" data-bs-target="#exampleModal"*ngIf="!isLogged"><i class='bx bx-user-x'></i></li> 
+            <li class="list-group-item" type="button" class="btn btn-dangerx" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="onLogOut()" *ngIf="isLogged"><i class='bx bx-user-x rojo'></i></li>
+            <!-- <li class="list-group-item"><a [href]="miPortfolio[1].url_red" target="_blank"><i class='bx bxl-{{miPortfolio[1].nombre}}-square'></i></a>
+            </li>
+            <li class="list-group-item"><a [href]="miPortfolio[0].url_red" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            </li>
+            <li class="list-group-item"><a [href]="miPortfolio[2].url_red" target="_blank"><i class='bx bxl-github'></i></a></li>
+            <li class="list-group-item" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class='bx bx-user-x'></i></li> -->
+        </ul>
+    </div>
+    </nav>
